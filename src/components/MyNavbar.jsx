@@ -40,7 +40,9 @@ const MyNavbar = () => {
           </Form>
         </Container>
       </Navbar>
-      
+      {loading && <p>Loading...</p>}
+      {error && <p className="text-danger">{error}</p>}
+      {weatherData && <WeatherCard {...weatherData} />}
     </>
   );
 };
