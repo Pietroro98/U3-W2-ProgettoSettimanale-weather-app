@@ -5,14 +5,21 @@ import Homepage from './Homepage';
 
 const MyNavbar = () => {
   const [city, setCity] = useState("");
+  const [cities, setCities] = useState([]);
   const { weatherData, fetchWeatherData, loading, error } = Homepage(
     "4e4c53b13695dbaf14eca338fb243928"
   );
 
-  const handleSearch = (event) => {
-    event.preventDefault();
+  const handleSearch = async (event) => {
+    event.preventDefault(); 
     if (city.trim()) {
-      fetchWeatherData(city);
+      try {
+        const data = await fetchWeatherData(city);
+        setCities(prevCities => [...prevCities, data]);
+        setCity(""); 
+      } catch (err) {
+        console.error(err);
+      }
     }
   };
 
