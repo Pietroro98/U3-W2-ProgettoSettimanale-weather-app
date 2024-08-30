@@ -9,7 +9,7 @@ const WeatherCard = ({ city, country, temp, tempMin, tempMax, description, icon 
         <Card.Body>
           <Card.Text>
             <p><strong>Temperature:</strong> {Math.round(temp)} °C</p>
-            <p>Description: {description}</p>
+            <p>{description}</p>
             <p><strong>MAX:</strong> {Math.round(tempMax)} °C <strong>MIN:</strong> {Math.round(tempMin)} °C</p>
           </Card.Text>
           <Button variant="primary">Weather Info</Button>

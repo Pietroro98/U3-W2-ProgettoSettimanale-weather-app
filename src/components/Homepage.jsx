@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
-const Homepage = (apiKey) => {
+const useWeather = (apiKey) => {
     const [weatherData, setWeatherData] = useState(null); 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const fetchWeatherData = async (city) => {
+    const fetchWeatherData = useCallback(async (city) => {
         setLoading(true);
         setError(null);
         try {
@@ -29,7 +29,7 @@ const Homepage = (apiKey) => {
         } finally {
             setLoading(false);
         }
-    };
+    }, [apiKey]);
 
     return {
         weatherData,
@@ -39,4 +39,4 @@ const Homepage = (apiKey) => {
     };
 };
 
-export default Homepage;
+export default useWeather;

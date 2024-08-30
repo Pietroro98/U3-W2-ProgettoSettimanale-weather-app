@@ -2,7 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyNavbar from "../src/components/MyNavbar";
 import MyFooter from "../src/components/Myfooter";
-import WeatherCard from "../src/components/WeatherCard";
+import SingleCard from "../src/components/SingleCard";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <MyNavbar />
       </header>
       
-      <WeatherCard />
+      <SingleCard />
       <footer>
         <MyFooter />
       </footer>
