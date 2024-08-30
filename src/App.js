@@ -12,13 +12,13 @@ function App() {
     backgroundImage: 'url(https://sfondo.info/i/original/f/0/e/82816.jpg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '100%',
-    width: '100vw',
+    height: '100vh',
+    
 };
 
   return (
     
-    <div style={backgroundStyle}>
+    <div  style={backgroundStyle}>
      <Router>
      <MyNavbar />
       <Routes>

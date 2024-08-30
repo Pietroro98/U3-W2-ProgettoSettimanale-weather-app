@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Card, Button } from "react-bootstrap";
 
-
 const WeatherCard = ({
   city,
   country,
@@ -13,8 +12,8 @@ const WeatherCard = ({
   tempMax,
 }) => {
   return (
-    <Container className="d-flex justify-content-center ">
-      <Card className="text-center my-3 mx-3 w-75 card-background">
+    <Container className="d-flex justify-content-center w-50 ">
+      <Card className="text-center my-3 mx-3 card-background" >
         <Card.Title>
           {city}, {country}
         </Card.Title>
