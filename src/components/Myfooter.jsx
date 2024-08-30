@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 const MyFooter = function () {
   return (
-    <footer className="bg-primary text-white py-3 fixed-bottom">
+    <footer className="bg-primary text-white py-3">
       <Container className="text-center">
         <span>
           Scopri ulteriori informazioni su{" "}

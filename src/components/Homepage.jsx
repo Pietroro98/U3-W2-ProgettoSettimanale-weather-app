@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 
-const useWeather = (apiKey) => {
+const Homepage = (apiKey) => {
     const [weatherData, setWeatherData] = useState(null); 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -39,4 +39,4 @@ const useWeather = (apiKey) => {
     };
 };
 
-export default useWeather;
+export default Homepage;
