@@ -2,13 +2,19 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyNavbar from "../src/components/MyNavbar";
 import MyFooter from "../src/components/Myfooter";
+import WeatherCard from "../src/components/WeatherCard";
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <header>
       <MyNavbar />
+      </header>
+      <WeatherCard />
+      <footer>
      <MyFooter />
-    </div>
+     </footer>
+    </>
   );
 }
 
