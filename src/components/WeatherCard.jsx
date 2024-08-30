@@ -12,13 +12,14 @@ const WeatherCard = ({
   tempMax,
 }) => {
   return (
-    <Container className="d-flex justify-content-center w-50 ">
-      <Card className="text-center my-3 mx-3 card-background" >
+    <Container className="d-flex justify-content-center ">
+      <Card className="text-center my-3 mx-3 card-background " >
         <Card.Title>
           {city}, {country}
         </Card.Title>
         <Card.Img
-          className="w-25"
+        
+          className="card-img-top"
           variant="top"
           src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
         />
