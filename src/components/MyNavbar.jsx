@@ -15,7 +15,7 @@ const MyNavbar = () => {
     if (city.trim()) {
       try {
         const data = await fetchWeatherData(city);
-        setCities(prevCities => [...prevCities, data]);
+        setCities([...cities, data]); 
         setCity(""); 
       } catch (err) {
         console.error(err);
