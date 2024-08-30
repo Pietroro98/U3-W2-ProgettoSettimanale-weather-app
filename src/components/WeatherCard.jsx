@@ -12,8 +12,8 @@ const WeatherCard = ({
   tempMax,
 }) => {
   return (
-    <Container className="d-flex justify-content-center ">
-      <Card className="text-center my-3 mx-3 card-background " >
+    <Container className="d-flex justify-content-center">
+      <Card className="text-center my-3 mx-3 card-background" >
         <Card.Title>
           {city}, {country}
         </Card.Title>
